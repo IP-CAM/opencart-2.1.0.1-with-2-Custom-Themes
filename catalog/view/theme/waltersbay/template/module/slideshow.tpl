@@ -15,7 +15,7 @@ $('#slideshow<?php echo $module; ?>').owlCarousel({
 	autoPlay: 3000,
 	singleItem: true,
 	navigation: true,
-	navigationText: ['<img src="catalog/view/theme/waltersbay/image/slide-arrow-left.png">', '<img src="catalog/view/theme/waltersbay/image/slide-arrow-right.png">'],
-	pagination: false
+	navigationText: ['<img src="catalog/view/theme/waltersbay/assets/images/arrow-left.png">', '<img src="catalog/view/theme/waltersbay/assets/images/arrow-right.png">'],
+	pagination: true
 });
 --></script>

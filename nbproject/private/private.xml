@@ -3,10 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/var/www/html/waltersbay/catalog/controller/module/featured.php</file>
-            <file>file:/var/www/html/waltersbay/catalog/controller/waltersbay/common.php</file>
-            <file>file:/var/www/html/waltersbay/catalog/view/theme/default/template/waltersbay/sustainability.tpl</file>
-            <file>file:/var/www/html/waltersbay/catalog/view/theme/default/template/waltersbay/contactus.tpl</file>
+            <file>file:/var/www/html/waltersbay/catalog/view/theme/waltcustom/template/product/search.tpl</file>
+            <file>file:/var/www/html/waltersbay/catalog/view/theme/waltcustom/template/module/slideshow.tpl</file>
+            <file>file:/var/www/html/waltersbay/catalog/view/theme/waltcustom/template/common/cart.tpl</file>
+            <file>file:/var/www/html/waltersbay/catalog/view/theme/waltcustom/template/common/search.tpl</file>
+            <file>file:/var/www/html/waltersbay/catalog/view/theme/default/template/common/header.tpl</file>
+            <file>file:/var/www/html/waltersbay/catalog/view/theme/waltcustom/template/module/categorygrid.tpl</file>
             <file>file:/var/www/html/waltersbay/catalog/view/theme/waltcustom/template/common/header.tpl</file>
         </group>
     </open-files>

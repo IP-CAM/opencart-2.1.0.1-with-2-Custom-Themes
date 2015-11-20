@@ -2,37 +2,36 @@
     <!--<![endif]-->
     <head>
 
-        <meta charset="UTF-8" />    
+        <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+        <meta charset="utf-8" />
+        <title>Waltersbay</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-        <title>Watersbay</title>
+        <link rel="apple-touch-icon" href="pages/ico/60.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="catalog/view/theme/waltcustom/pages/ico/76.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="catalog/view/theme/waltcustom/pages/ico/120.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="catalog/view/theme/waltcustom/pages/ico/152.png">
+        <link rel="icon" type="image/x-icon" href="catalog/view/theme/waltcustom/image/favicon.ico" />
 
-        <base href="<?php echo $base; ?>" />
-        <?php if ($description) { ?>
-        <meta name="description" content="<?php echo $description; ?>" />
-        <?php } ?>
-        <?php if ($keywords) { ?>
-        <meta name="keywords" content= "<?php echo $keywords; ?>" />
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-touch-fullscreen" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="default">
+        <meta content="" name="description" />
+        <meta content="" name="author" />
 
-        <?php } ?> 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-        <script src="catalog/view/theme/waltcustom/javascript/jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
-        <script src="catalog/view/theme/waltcustom/javascript/jquery/jquery.bxslider.min.js" type="text/javascript"></script>
-        <link href="catalog/view/theme/waltcustom/javascript/jquery/jquery.bxslider.css" rel="stylesheet" />
-        <link href="catalog/view/theme/waltcustom/javascript/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen" />
-        <script src="catalog/view/theme/waltcustom/javascript/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
-        <link href="catalog/view/theme/waltcustom/javascript/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-        <link href="//fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700" rel="stylesheet" type="text/css" />
-        <link href="catalog/view/theme/waltcustom/stylesheet/style.css" rel="stylesheet" type="text/css">
-        <link href="catalog/view/theme/waltcustom/stylesheet/custom.css" rel="stylesheet" type="text/css">
+        <!-- BEGIN PLUGINS -->
+        <link href="catalog/view/theme/waltcustom/javascript/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
+        <link href="catalog/view/theme/waltcustom/javascript/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="catalog/view/theme/waltcustom/javascript/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
+        <link href="catalog/view/theme/waltcustom/javascript/plugins/swiper/css/swiper.css" rel="stylesheet" type="text/css" media="screen" />
+        <!-- END PLUGINS -->
 
-        <!-- BEGIN Vendor CSS-->
-        <link rel="icon" href="catalog/view/theme/waltcustom/image/favicon.ico" type="image/x-icon"/>
-
-        <link href="catalog/view/theme/waltcustom/javascript/bootstrap-select2/select2.css" rel="stylesheet" type="text/css" media="screen" />
-        <link href="catalog/view/theme/waltcustom/javascript/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
-        <!-- END Vendor CSS -->
+        <!-- BEGIN PAGES CSS -->
+        <link class="main-stylesheet" href="catalog/view/theme/waltcustom/pages/css/pages.css" rel="stylesheet" type="text/css" />
+        <link class="main-stylesheet" href="catalog/view/theme/waltcustom/pages/css/pages-icons.css" rel="stylesheet" type="text/css" />
+        <link class="main-stylesheet" href="catalog/view/theme/waltcustom/stylesheet/custom.css" rel="stylesheet" type="text/css" />
+        <link class="main-stylesheet" href="catalog/view/theme/waltcustom/stylesheet/style.css" rel="stylesheet" type="text/css" />
+        <!-- BEGIN PAGES CSS -->                    
 
         <?php foreach ($styles as $style) { ?>
         <link href="<?php echo $style['href']; ?>" type="text/css" rel="<?php echo $style['rel']; ?>" media="<?php echo $style['media']; ?>" />
@@ -41,59 +40,94 @@
         <?php foreach ($links as $link) { ?>
         <link href="<?php echo $link['href']; ?>" rel="<?php echo $link['rel']; ?>" />
         <?php } ?>
+        <link rel="icon" type="image/x-icon" href="catalog/view/theme/waltcustom/image/favicon.ico" />
         <?php foreach ($scripts as $script) { ?>
         <script src="<?php echo $script; ?>" type="text/javascript"></script>
         <?php } ?>
         <?php foreach ($analytics as $analytic) { ?>
         <?php echo $analytic; ?>
         <?php } ?>
+
+        <title><?php echo $title; ?></title>
+        <base href="<?php echo $base; ?>" />
+        <?php if ($description) { ?>
+        <meta name="description" content="<?php echo $description; ?>" />
+        <?php } ?>
+        <?php if ($keywords) { ?>
+        <meta name="keywords" content= "<?php echo $keywords; ?>" />
+        <?php } ?>
+
+
     </head>
 
-    <body>
-        <!-- BEGIN Header-->
-        <nav class="navbar navbar-default">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.php?route=common/home"><img alt="Brand" src="catalog/view/theme/waltcustom/image/logo.png" /></a>
+    <body class="pace-dark">
+        <!-- BEGIN HEADER -->
+        <nav class="header md-header light" data-pages="header" data-pages-header="autoresize">
+            <div class="container relative full-height">
+                <!-- BEGIN LEFT CONTENT -->
+                <div class="pull-left z-index-1">
+                    <!-- BEGIN HEADER TOGGLE FOR MOBILE -->
+                    <div class="visible-sm-inline visible-xs-inline menu-toggler pull-right " data-pages="header-toggle" data-pages-element="#header">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="three"></div>
+                    </div>
                 </div>
-
-                <div class="collapse navbar-collapse border-bottom" id="main-menu">
-                    <ul class="nav navbar-nav top_bar">
-                        <li><a href="index.php?route=waltersbay/common/products">Products</a></li><li class="divider-vertical"></li>
-                        <li><a href="index.php?route=information/information&information_id=4">About us</a></li><li class="divider-vertical"></li>
-                        <li><a href="index.php?route=waltersbay/common/sustainability">Sustainability</a></li>
-                    </ul>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="hidden-xs">                            
-                            <button type="button" class="btn btn-inverse btn-block btn-lg dropdown-toggle " data-toggle="dropdown" data-target="#filter-panel"style="margin-top: 16px;">
-                                <img class="" src="catalog/view/theme/waltcustom/image/search-icon.png" />
-                            </button>
-                            <ul class="dropdown-menu pull-right">
+                <!-- BEGIN CENTER CONTENT -->
+                <div class="pull-center">
+                    <div class="pull-center-inner">
+                        <div class="header-inner ">
+                            <!-- BEGIN LOGO -->                            
+                            <a href="<?php echo $home; ?>"><img src="catalog/view/theme/waltcustom/image/logo_black.png" width="220" height="58" data-src-retina="catalog/view/theme/waltcustom/image/logo_black_2x.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END CENTER CONTENT -->
+                <!-- BEGIN MENU -->
+                <div class=" menu-content clearfix" data-pages="menu-content" data-pages-direction="slideLeft" id="header">
+                    <!-- BEGIN HEADER CLOSE TOGGLE FOR MOBILE -->
+                    <div class="pull-left">
+                        <a href="#" class="text-black link padding-10 visible-xs-inline visible-sm-inline pull-right m-t-10 m-b-10 m-r-10 on" data-pages="header-toggle" data-pages-element="#header">
+                            <i class="pg-close_line"></i>
+                        </a>
+                    </div>
+                    <div class="sm-menu pull-left p-t-10 p-l-20">
+                        <img src="catalog/view/theme/waltcustom/image/logo_black.png" width="150" height="39"  alt="">
+                    </div>
+                    <div class="pull-left sm-block sm-full-width">
+                        <div class="header-inner">
+                            <!-- BEGIN MENU ITEMS -->
+                            <ul class="menu">
                                 <li>
-                                    <label class="filter-col"for="pref-search">Search:</label>
-                                    <input type="text" class="form-control input-sm filter-col" id="pref-search">
+                                    <a href="index.php?route=waltersbay/common/products" data-text="Products" class="active">Products</a>
                                 </li>
-                                <li>
-                                    <button type="submit" class="btn btn-default filter-col"style="margin-top: 10px;">
-                                        <span class="glyphicon glyphicon-record"></span> Search
-                                    </button>
+                                <li class="classic">
+                                    <a href="index.php?route=information/information&information_id=4" data-text="About Us">About Us</a>
+                                </li>
+                                <li class="classic">
+                                    <a href="index.php?route=waltersbay/common/sustainability" data-text="sustainability">Sustainability</a>
                                 </li>
                             </ul>
-                        </li>
-                        <li class="divider-vertical"></li>
-                        <li class="hidden-xs">                           
-                                <?php echo $cart; ?>                                
-                        </li>
-                    </ul>
+                            <!-- END MENU ITEMS -->
+                        </div>
+                    </div>
+                    <div class="pull-right sm-block sm-full-width">
+                        <div class="header-inner">
+                            <!-- BEGIN MENU ITEMS -->
+                            <ul class="menu">
+                                <li class="hidden-xs">                                    
+                                    <?php echo $search; ?>
+                                </li>                                                               
+                                <li class="hidden-xs">                                    
+                                    <?php echo $cart; ?>
+                                </li>
+                            </ul>
+                            <!-- END MENU ITEMS -->
+                        </div>
+                    </div>
                 </div>
-            </div>		
+                <!-- END MENU -->
+                <div class="border-bottom"></div>
+            </div>
         </nav>
-        <!-- END Header-->
-    </body>
-</html>
+        <!-- END HEADER -->      

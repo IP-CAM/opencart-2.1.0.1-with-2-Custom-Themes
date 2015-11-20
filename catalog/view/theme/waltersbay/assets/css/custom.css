@@ -1,0 +1,246 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+@import url(https://fonts.googleapis.com/css?family=Cabin);
+
+body {
+	color: #717070;
+}
+
+/* Font
+------------------------------------
+ */
+.font-raleway {
+	font-family: 'Raleway' !important;
+}
+
+.font-cabin {
+	font-family: 'Cabin' !important;
+}
+
+
+/* Header
+------------------------------------
+ */
+.header .menu > li > a {
+	font-family: 'Open Sans';
+	font-weight: normal;
+}
+
+.header .menu > li {
+	border-right: 1px solid #717070;
+}
+
+.header .menu > li:last-child {
+	border-right: none;
+}
+
+.header.light {
+	border-bottom: none;
+	background-color: #fff;
+}
+
+.header.minimized {
+    height: 70px !important;
+}
+
+.header.minimized .header-inner {
+	line-height: 70px !important;
+}
+
+
+/* Swiper Slider
+------------------------------------
+ */
+.swiper-slide{
+	text-align: left;
+}
+
+
+#category .swiper-container {
+    width: 100%;
+    height: 192px;
+    margin: 10px auto;
+}
+
+#category .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.bg-grey {
+	background: #4f4f4f;
+}
+
+.bg-gold {
+	background: #c2a400;
+}
+
+
+/* Text
+------------------------------------
+ */
+.text-underline {
+	text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #717070;
+}
+
+.text-grey {
+	color: #bebdbd;
+}
+
+
+/* form
+------------------------------------
+ */
+.form-control{
+	min-height: 40px;
+}
+.form-control::-moz-placeholder {
+	text-align: center;
+	color: #ccc;
+	opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+	text-align: center;
+	color: #ccc;
+}
+.form-control::-webkit-input-placeholder {
+	text-align: center;
+	color: #ccc;
+}
+
+.btn-rounded-gold {
+	border: 2px solid #c2a400;	
+	color: #717070;
+	padding-left: 25px;
+	padding-right: 25px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.btn-rounded-gold:hover,.btn-rounded-gold:focus,.btn-rounded-gold.focus,.btn-rounded-gold .open>.dropdown-toggle.btn-rounded-gold {
+	background-color: #c2a400;
+	border: 2px solid #c2a400;
+	color: #ffffff;
+}
+
+.btn-rounded-gold:active,.btn-rounded-gold.active {
+	background-color: #c2a400;
+	border: 2px solid #c2a400;
+	color: #ffffff;
+}
+
+a.text-default {
+	text-shadow: none !important;
+	color: #717070;
+	transition: color 0.1s linear 0s, background-color 0.1s linear 0s, opacity 0.2s linear 0s !important;
+}
+a.text-default:focus,
+a.text-default:hover,
+a.text-default:active {
+	color: #bebdbd;
+}
+a.text-default,
+a.text-default:focus,
+a.text-default:hover,
+a.text-default:active {
+	outline: 0 !important;
+	text-decoration: underline;
+}
+
+a.text-grey {
+	text-shadow: none !important;
+	color: #bebdbd;
+	transition: color 0.1s linear 0s, background-color 0.1s linear 0s, opacity 0.2s linear 0s !important;
+}
+a.text-grey:focus,
+a.text-grey:hover,
+a.text-grey:active {
+	color: #c2a400;
+}
+a.text-grey,
+a.text-grey:focus,
+a.text-grey:hover,
+a.text-grey:active {
+	outline: 0 !important;
+	text-decoration: none;
+}
+
+a.text-gold {
+	text-shadow: none !important;
+	color: #c2a400;
+	transition: color 0.1s linear 0s, background-color 0.1s linear 0s, opacity 0.2s linear 0s !important;
+}
+a.text-gold:focus,
+a.text-gold:hover,
+a.text-gold:active {
+	color: #dcca68;
+}
+a.text-gold,
+a.text-gold:focus,
+a.text-gold:hover,
+a.text-gold:active {
+	outline: 0 !important;
+	text-decoration: none;
+}
+
+
+/* Isotopes Fix
+------------------------------------
+ */
+.ar-1-2:before {
+	content: "";
+	display: block;
+	padding-top: calc(200% -  0px);
+	/* initial ratio of 1:1*/
+}
+
+.iso-title {
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+}
+
+.iso-subtitle {
+	font-family: 'Open Sans';
+	font-weight: 400;
+	letter-spacing: 0.03em;
+}
+
+
+/* other
+------------------------------------
+ */
+.border-bottom {
+	border-bottom: 1px solid #e7e7e7;
+}
+
+@media (min-width: 769px) {
+	.sm-menu {
+		display: none !important;
+	}
+}

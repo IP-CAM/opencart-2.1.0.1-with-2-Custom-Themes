@@ -1,8 +1,6 @@
 <div id="cart" class="btn-group btn-block">
-    <button type="button" data-toggle="dropdown" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-inverse btn-block btn-lg dropdown-toggle"style="margin-top: 14px"><!--i class="fa fa-shopping-cart"></i--> <!--span id="cart-total"><?php echo $text_items; ?></span-->
-        <img class="" src="catalog/view/theme/waltcustom/image/shopping-cart-icon.png" />
-    </button>
-    <ul class="dropdown-menu pull-right"style="margin-top: 2px">
+    <button type="button" data-toggle="dropdown" data-loading-text="<?php echo $text_loading; ?>" class="btn"><!--i class="fa fa-shopping-cart"></i> <span id="cart-total"><?php echo $text_items; ?></span--><img class="" src="catalog/view/theme/waltcustom/image/shopping-cart-icon.png" /></button>
+    <ul class="dropdown-menu pull-right">
         <?php if ($products || $vouchers) { ?>
         <li>
             <table class="table table-striped">
